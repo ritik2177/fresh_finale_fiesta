@@ -25,30 +25,37 @@
     <div id="navbar"></div>
     <div style="height: 100%; width: 100%;" class="container">
       <div id="cnt" class="container">
-        <img class="" height="500px" width="400px" src="/fresh_finale_fiesta/image/poster.jpg" alt="">
+        <img class="" height="500px" width="400px" src="image/poster.jpg" alt="">
       </div>
     </div>  
     <div id="btn" class="container">
-      <div  class="d-inline-flex gap-2 mb-5">
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Party Poster</button>
+        <a href="image/poster.jpg" download="image/poster.jpg">
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Download <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/download--v1.png" alt="download--v1"/></button></a>
+      </div>
+
+      <!-- <div  class="d-inline-flex gap-2 mb-5">
         <button class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" type="button">
           Party Poster
           
-        <a href="/fresh_finale_fiesta/image/poster.jpg" download="/fresh_finale_fiesta/image/poster.jpg">
+        
         <button class="btn btn-outline-secondary btn-lg px-4 rounded-pill" type="button">
           Download link <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/download--v1.png" alt="download--v1"/>
         </button></a>
-      </div>
-    </div>
-    <div id="footer"></div>
+      </div> -->
+    </div> <a href=""></a>
+    <div id="footer">
     <script>
-      fetch('/fresh_finale_fiesta/nav.html')
+      
+      fetch('nav.html')
           .then(response => response.text())
           .then(data => {
               document.getElementById('navbar').innerHTML = data;
           })
           .catch(error => console.error('Error loading navbar:', error));
 
-          fetch('/fresh_finale_fiesta/footer.html')
+          fetch('footer.html')
           .then(response => response.text())
           .then(data => {
               document.getElementById('footer').innerHTML = data;
